@@ -1,0 +1,193 @@
+ .filters {
+    .rangeFilter {
+        height: 0.5rem;
+    }
+    .statusToggle {
+        input {
+            cursor: pointer;
+            width: 3.5em;
+            height: 1.5em;
+        }
+    }
+}
+.mapsArea {
+    display: flex;
+    margin-top: 25px;
+    .left {
+        .head{
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        width: 40%;
+        .shopsNo {
+            background-color: #278bbc;
+            padding: 5px 15px;
+            color: #fff;
+        }
+        .locationList {
+            max-height: 70vh;
+            overflow-y: auto;
+            .stores {
+                border-bottom: 2px solid #e0e0e0;
+                &.active {
+                    background-color: #278bbc2e;
+                }
+                padding: 20px 10px;
+                .shopDetail {
+
+                    h6, span {
+                        width: 100%;
+                    }
+                    p {
+                        display: flex;
+                        margin-bottom: 5px;;
+                        label{
+                            width: 25px;
+                            color: #278bbc;
+                            position: relative;
+                        }
+                        svg{
+                            height: 13px;
+                            position: absolute;
+                            top:5px;
+                        }
+                        small{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .shopIcon {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        /* Custom scrollbar styles for WebKit (Chrome, Safari, Edge) */
+        .locationList::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .locationList::-webkit-scrollbar-thumb {
+            background: #278bbc;
+        }
+        
+        .locationList::-webkit-scrollbar-thumb:hover {
+            background: #278bbc;
+        }
+        
+        .locationList::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+    }
+    @media (max-width: 992px) {
+        .left {
+            width: 100%;
+        }
+    }
+    .right {
+        width: 70%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.login {
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard_detail { 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    span{
+        &:nth-child(1) {
+            background-color: #ffedc6;
+            label {
+                background-color: #FED568;
+            }
+        }
+        &:nth-child(2) {
+            background-color: #f0cad7;
+            label {
+                background-color: #F03478;
+            }
+        }
+        &:nth-child(3) {
+            background-color: #e2facb;
+            label {
+                background-color: #97D865;
+            }
+        }
+        display: flex;
+        width: 30%;
+        border-radius: 5px;
+        padding: 15px;
+        label {
+            padding: 10px 15px;
+            font-size: 25px;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #fff;
+        }
+        p {
+            margin-bottom: 0;
+            justify-content: center;
+            h6 {
+                margin-bottom: 0;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.googleKeyBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.createStore {
+    .formBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        span {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+        }
+    }
+}
+
+.divTable{
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray for even rows */
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #ffffff; /* White for odd rows */
+    }
+
+   
+}
